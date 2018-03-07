@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.Test;
+
 /**
  * @Author: jude
  * @Date: Create in 15:25 2018/3/6
@@ -19,5 +21,9 @@ public class BinarySearch {
             search(s,mid,start,target);
         }
         return mid;
+    }
+    @Test
+    public void testBinarySearch(){
+        //TODO:
     }
 }
