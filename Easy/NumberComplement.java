@@ -8,7 +8,8 @@ public class NumberComplement {
         int tem = num;
         
         while(tem>0){
-            (tem%2) * 2;
+            //TODO:
         }
+        return -1;
     }
 }
