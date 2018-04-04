@@ -9,7 +9,7 @@ import java.util.stream.Stream;
  * Input: ["Hello", "Alaska", "Dad", "Peace"]
  * Output: ["Alaska", "Dad"]
  */
-public class KeyboardRow {
+public class KeyboardRow_500 {
     public String[] findWords(String[] words) {
         Set<String> set1 = new HashSet<String>();
         Set<String> set2 = new HashSet<String>();

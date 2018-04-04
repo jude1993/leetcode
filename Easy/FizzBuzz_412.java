@@ -11,7 +11,7 @@ import java.util.List;
  * But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”.
  * For numbers which are multiples of both three and five output “FizzBuzz”.
  */
-public class FizzBuzz {
+public class FizzBuzz_412 {
     public List<String> fizzBuzz(int n) {
         List<String> list = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
