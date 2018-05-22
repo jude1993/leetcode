@@ -11,7 +11,7 @@ import java.util.List;
  * Otherwise, the NOT null node will be used as the node of new tree.
  * 合并树
  */
-public class MergeTwoBinaryTrees {
+public class MergeTwoBinaryTrees_617 {
     public TreeNode solution(TreeNode t1, TreeNode t2) {
         if (t1 == null && t2 == null) {
             return null;

@@ -4,7 +4,7 @@
  * @Description:Given a string, you need to reverse the order of characters in each word within a sentence
  *              while still preserving whitespace and initial word order.
  */
-public class ReverseWords {
+public class ReverseWords_557 {
     public String reverseWords(String s){
         String[] words = s.split(" ");
         StringBuffer sb = new StringBuffer();

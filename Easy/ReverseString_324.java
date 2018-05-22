@@ -3,7 +3,7 @@
  * @Date: Create in 15:37 2018/3/13
  * @Description: Write a function that takes a string as input and returns the string reversed.
  */
-public class ReverseString {
+public class ReverseString_324 {
     public String reverseString(String s) {
         char[] chars = s.toCharArray();
         StringBuffer sb = new StringBuffer();

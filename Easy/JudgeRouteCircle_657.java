@@ -3,7 +3,7 @@
  * @Date: Create in 15:11 2018/3/6
  * @Description: 判断R (Right)和L (Left), U (Up)和D (down)数量是否相等
  */
-public class JudgeRouteCircle {
+public class JudgeRouteCircle_657 {
     public boolean solution(String moves) {
         char[] chars = moves.toCharArray();
         int x = 0;

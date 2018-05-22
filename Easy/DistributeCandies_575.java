@@ -11,7 +11,7 @@ import java.util.Set;
  * Each number means one candy of the corresponding kind. You need to distribute these candies equally in number to brother and sister.
  * Return the maximum number of kinds of candies the sister could gain.
  */
-public class DistributeCandies {
+public class DistributeCandies_575 {
     public int distributeCandies(int[] candies) {
         Set<Integer> set = new HashSet<Integer>();
         for (int candy : candies) {

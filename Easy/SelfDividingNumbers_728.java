@@ -13,7 +13,7 @@ import java.util.List;
  *      left = 1, right = 22
  *      Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
  */
-public class SelfDividingNumbers {
+public class SelfDividingNumbers_728 {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> list = new ArrayList<Integer>();
         for(int i = left; i<=right; i++){
