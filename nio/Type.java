@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
 
 /**
  * @Author: jude

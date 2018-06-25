@@ -70,7 +70,7 @@ public class FlightProcessor implements PageProcessor {
 
     @Test
     public void testRegex(){
-        Pattern pattern = Pattern.compile("https://webresource.c-ctrip.com/[a-z A-Z 0-9 /]*\\\\.js");
+        Pattern pattern = Pattern.compile("https://webresource.c-ctrip.com/[a-z A-Z 0-9 /]*[.]js");
         Matcher matcher = pattern.matcher("https://webresource.c-ctrip.com/ResCRMOnline/R6/member/common/js/mask_young.js?20171130");
         if(matcher.find()){
             System.out.println(matcher.group(0));

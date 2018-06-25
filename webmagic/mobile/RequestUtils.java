@@ -1,3 +1,5 @@
+package mobile;
+
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.model.HttpRequestBody;
 import us.codecraft.webmagic.utils.HttpConstant;
@@ -43,58 +45,7 @@ public class RequestUtils {
             "}";
 
 
-    static String mobileStr = "{\n" +
-            "    \"preprdid\": \"\",\n" +
-            "    \"trptpe\": 1,\n" +
-            "    \"flag\": 8,\n" +
-            "    \"searchitem\": [\n" +
-            "        {\n" +
-            "            \"dccode\": \"SHA\",\n" +
-            "            \"accode\": \"SEL\",\n" +
-            "            \"dtime\": \"2018-06-14\"\n" +
-            "        }\n" +
-            "    ],\n" +
-            "    \"version\": [\n" +
-            "        {\n" +
-            "            \"Key\": \"170710_fld_dsmid\",\n" +
-            "            \"Value\": \"O\"\n" +
-            "        }\n" +
-            "    ],\n" +
-            "    \"psgList\": [\n" +
-            "        {\n" +
-            "            \"type\": 1,\n" +
-            "            \"count\": 1\n" +
-            "        }\n" +
-            "    ],\n" +
-            "    \"token\": \"2\",\n" +
-            "    \"seat\": 0,\n" +
-            "    \"segno\": 1,\n" +
-            "    \"tid\": \"{64b431ca-4a5d-4e15-b923-33a3b2283540}\",\n" +
-            "    \"head\": {\n" +
-            "        \"cid\": \"09031073410302670718\",\n" +
-            "        \"ctok\": \"\",\n" +
-            "        \"cver\": \"1.0\",\n" +
-            "        \"lang\": \"01\",\n" +
-            "        \"sid\": \"8888\",\n" +
-            "        \"syscode\": \"09\",\n" +
-            "        \"auth\": null,\n" +
-            "        \"extension\": [\n" +
-            "            {\n" +
-            "                \"name\": \"aid\",\n" +
-            "                \"value\": \"4897\"\n" +
-            "            },\n" +
-            "            {\n" +
-            "                \"name\": \"sid\",\n" +
-            "                \"value\": \"130026\"\n" +
-            "            },\n" +
-            "            {\n" +
-            "                \"name\": \"protocal\",\n" +
-            "                \"value\": \"https\"\n" +
-            "            }\n" +
-            "        ]\n" +
-            "    },\n" +
-            "    \"contentType\": \"json\"\n" +
-            "}";
+    static String mobileStr = "{\"preprdid\":\"\",\"trptpe\":1,\"flag\":8,\"searchitem\":[{\"dccode\":\"SHA\",\"accode\":\"OSA\",\"dtime\":\"2018-07-10\"}],\"version\":[{\"Key\":\"170710_fld_dsmid\",\"Value\":\"O\"}],\"psgList\":[{\"type\":1,\"count\":1}],\"token\":\"2\",\"seat\":0,\"segno\":1,\"head\":{\"cid\":\"09031073410302670718\",\"ctok\":\"\",\"cver\":\"1.0\",\"lang\":\"01\",\"sid\":\"8888\",\"syscode\":\"09\",\"auth\":null,\"extension\":[{\"name\":\"aid\",\"value\":\"4897\"},{\"name\":\"sid\",\"value\":\"130026\"},{\"name\":\"protocal\",\"value\":\"https\"}]},\"contentType\":\"json\"}";
     /**
      * 封装post请求的request对象
      * */
