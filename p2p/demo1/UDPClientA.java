@@ -25,7 +25,7 @@ public class UDPClientA {
     private static void receive(DatagramSocket client){
         try{
             for(;;){
-                //缓冲区
+                //数据缓冲区
                 byte[] buf = new byte[1024];
                 //数据包
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
