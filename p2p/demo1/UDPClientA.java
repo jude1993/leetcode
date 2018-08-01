@@ -1,3 +1,4 @@
+import java.io.*;
 import java.net.*;
 
 public class UDPClientA {
@@ -43,5 +44,20 @@ public class UDPClientA {
             e.printStackTrace();
         }
 
+    }
+
+    private void download(String name, DatagramSocket client){
+        try {
+            FileOutputStream fos = new FileOutputStream(name);
+            byte[] buf = new byte[1024];
+            DatagramPacket packet = new DatagramPacket(buf, buf.length);
+            client.receive(packet);
+            fos.write(packet.getData());
+            fos.flush();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
