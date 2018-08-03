@@ -1,6 +1,8 @@
 package ping;
 
 import org.jsoup.Jsoup;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,9 +14,10 @@ import java.util.stream.Collectors;
  *  @ Description：
  * */
 public class AutoPing {
-  private static String path = "https://www.vultr.com/faq/#downloadspeedtests";
-  private static String elementId = "speedtest_v4";
-  private static String attr = "href";
+    private static final Logger logger = LoggerFactory.getLogger(AutoPing.class);
+    private static String path = "https://www.vultr.com/faq/#downloadspeedtests";
+    private static String elementId = "speedtest_v4";
+    private static String attr = "href";
 
   public static void main(String[] args) {
     try {
