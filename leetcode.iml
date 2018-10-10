@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/common" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/p2p/netty" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/p2p" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/design_patterns" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

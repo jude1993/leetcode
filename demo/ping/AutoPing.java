@@ -1,26 +1,25 @@
 package ping;
 
 import org.jsoup.Jsoup;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/** @ Author ：wupeng
- *  @ Date ：Created in 10:58 2018/7/27
- *  @ Description：
- * */
+/**
+ * @ Author ：wupeng
+ * @ Date ：Created in 10:58 2018/7/27
+ * @ Description：vultr节点测速
+ */
 public class AutoPing {
-    private static final Logger logger = LoggerFactory.getLogger(AutoPing.class);
     private static String path = "https://www.vultr.com/faq/#downloadspeedtests";
     private static String elementId = "speedtest_v4";
     private static String attr = "href";
 
   public static void main(String[] args) {
     try {
+        System.out.println("测速中,大概要20秒左右........");
       long start = System.currentTimeMillis();
       List<List<String>> collect =
           Jsoup.parse(new URL(path), 1000)
