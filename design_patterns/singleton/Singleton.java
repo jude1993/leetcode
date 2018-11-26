@@ -9,6 +9,8 @@ public class Singleton {
 
   public static Singleton instance;
 
+    private boolean res;
+
   private Singleton() {}
 
   public static Singleton getInstance() {

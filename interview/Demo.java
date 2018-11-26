@@ -14,6 +14,7 @@ public static void main(String[] args){
 }
     @Test
     public void test1(){
+        System.out.println("0".equals(new Integer(0)));
         System.out.println(foo(5));
     }
 

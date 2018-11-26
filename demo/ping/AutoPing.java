@@ -1,9 +1,12 @@
 package ping;
 
 import org.jsoup.Jsoup;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,7 +29,7 @@ public class AutoPing {
               .getElementById(elementId)
               .childNodes()
               .parallelStream()
-              .filter(node -> node.childNodes().size() == 6)
+                  .filter(node -> node.childNodes().size() == 7)
               .map(
                   node -> {
                     String address = node.childNode(1).childNode(0).toString();
@@ -37,10 +40,11 @@ public class AutoPing {
                     } catch (Exception e) {
                       e.printStackTrace();
                     }
+                      //System.out.println(str);
                     return str;
                   })
               .collect(Collectors.toList());
-      print(collect);
+        print(collect);
       System.out.println("耗时：" + (System.currentTimeMillis() - start) / 1000);
     } catch (IOException e) {
       e.printStackTrace();
@@ -50,4 +54,13 @@ public class AutoPing {
   private static void print(List<List<String>> list) {
     list.forEach(l -> l.forEach(System.out::println));
   }
+
+    @Test
+    public void parse() throws Exception {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String format1 = format.format(new Date(1539908100000L));
+        String format2 = format.format(new Date(1539908132000L));
+        System.out.println(format1);
+        System.out.println(format2);
+    }
 }

@@ -1,28 +1,60 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Stream;
 
 /**
  * @Author: jude
  * @Date: Create in 16:14 2018/3/13
  * @Description:Given a List of words, return the words that can be typed using letters of alphabet
- * on only one row's of American keyboard like the image below.
+ * on only one w.row's of American keyboard like the image belo
  * Input: ["Hello", "Alaska", "Dad", "Peace"]
  * Output: ["Alaska", "Dad"]
  */
 public class KeyboardRow_500 {
-    public String[] findWords(String[] words) {
-        Set<String> set1 = new HashSet<String>();
-        Set<String> set2 = new HashSet<String>();
-        Set<String> set3 = new HashSet<String>();
-        Collections.addAll(set1, "q", "w", "e", "r", "t", "y", "u", "i", "o", "p");
-        Collections.addAll(set2, "a", "s", "d", "f", "g", "h", "j", "l", "l");
-        Collections.addAll(set3, "z", "x", "c", "v", "b", "n", "m");
+    public static String[] findWords(String[] words) {
+        String[] strings = new String[words.length];
+        String line1 = "qwertyuiop";
+        String line2 = "asdfghjkl";
+        String line3 = "zxcvbnm";
+
+        Arrays.stream(words).forEach(word -> {
+//            Arrays.stream(word.toCharArray()).
+        });
+
         for (String word : words) {
+            Set<Object> set = new HashSet<>();
             for (int i = 0; i < word.length(); i++) {
-                //:TODO:
+                if (line1.contains(String.valueOf(word.toLowerCase().charAt(i)))) {
+                    set.add(line1);
+                    continue;
+                }
+                if (line2.contains(String.valueOf(word.toLowerCase().charAt(i)))) {
+                    set.add(line2);
+                    continue;
+                }
+                if (line3.contains(String.valueOf(word.toLowerCase().charAt(i)))) {
+                    set.add(line3);
+                    continue;
+                }
+            }
+            if (set.size() == 1) {
+                if (strings.length == 0) {
+                    strings[0] = word;
+                    continue;
+                }
+                strings[strings.length - 1] = word;
             }
         }
-        return null;
+        return strings;
+    }
+
+    public static void main(String[] args) {
+        String[] words = findWords(new String[]{"Hello", "Alaska", "Dad", "Peace"});
+        for (String word : words) {
+            System.out.println(word);
+        }
     }
 
     /**
