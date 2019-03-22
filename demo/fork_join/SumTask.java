@@ -56,6 +56,7 @@ public class SumTask extends RecursiveTask<Long> {
         long[] array = new long[400];
         fillRandom(array);
         // fork/join task:
+        System.nanoTime();
         ForkJoinPool fjp = new ForkJoinPool(4); // 最大并发数4
         ForkJoinTask<Long> task = new SumTask(array, 0, array.length);
         long startTime = System.currentTimeMillis();

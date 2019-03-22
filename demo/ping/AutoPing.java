@@ -43,8 +43,7 @@ public class AutoPing {
                       //System.out.println(str);
                     return str;
                   })
-              .collect(Collectors.toList());
-        print(collect);
+              .collect(Collectors.toList());        print(collect);
       System.out.println("耗时：" + (System.currentTimeMillis() - start) / 1000);
     } catch (IOException e) {
       e.printStackTrace();
