@@ -40,7 +40,6 @@ public class AutoPing {
                     } catch (Exception e) {
                       e.printStackTrace();
                     }
-                      //System.out.println(str);
                     return str;
                   })
               .collect(Collectors.toList());        print(collect);
