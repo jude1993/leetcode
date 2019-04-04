@@ -4,4 +4,5 @@
  * @Description:
  */
 public class ChatClient {
+
 }

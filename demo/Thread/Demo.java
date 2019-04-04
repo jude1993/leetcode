@@ -31,6 +31,7 @@ public class Demo {
             }
         }
         System.out.println(System.currentTimeMillis() - start);
+        new Thread();
     }
 
     public void doProcess(ExecutorService executor) throws ExecutionException, InterruptedException {
@@ -57,7 +58,7 @@ public class Demo {
         @Override
         public Boolean call() {
             try {
-                Thread.sleep(1000L);
+                Thread.sleep(100L);
                 System.out.println(Thread.currentThread().getName() + "---->"+i);
             } catch (InterruptedException e) {
                 e.printStackTrace();
