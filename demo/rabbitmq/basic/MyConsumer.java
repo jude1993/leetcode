@@ -1,4 +1,4 @@
-package rabbitmq;
+package rabbitmq.basic;
 
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Consumer;

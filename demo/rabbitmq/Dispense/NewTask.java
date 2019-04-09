@@ -1,7 +1,7 @@
 package rabbitmq.Dispense;
 
 import com.rabbitmq.client.MessageProperties;
-import rabbitmq.BaseConnection;
+import rabbitmq.basic.BaseConnection;
 
 import java.io.IOException;
 

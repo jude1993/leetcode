@@ -1,6 +1,6 @@
 package rabbitmq.Dispense;
 
-import rabbitmq.MyConsumer;
+import rabbitmq.basic.MyConsumer;
 
 /**
  * @author ：wupeng

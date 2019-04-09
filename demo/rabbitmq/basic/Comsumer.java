@@ -1,4 +1,4 @@
-package rabbitmq;
+package rabbitmq.basic;
 
 /**
  * @author ：wupeng
