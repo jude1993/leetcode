@@ -26,8 +26,6 @@ hs_err_pid*
 
 .idea/inspectionProfiles/
 .idea/workspace.xml
-Hard/
-Medium/
 src/
 target/
 /ExcelReader/
